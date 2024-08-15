@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+img {
+   display: block;
+   object-fit: cover;
+}
+
+svg {
+   fill: currentColor;
+}
+
+html {
+   height: 100%;
+}
+
+.body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   align-items: flex-start;
+   overflow-x: hidden;
+   overflow-y: scroll;
+   position: relative;
+   height: auto;
+   min-height: 100%;
+}

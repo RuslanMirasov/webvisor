@@ -1,7 +1,19 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+   --color: #7eb101;
+   --black: #2c2c2c;
+   --white: #fefefe;
+   --grey: #f5f5f5;
+   --grey-light: #f5f5f5;
+   --placeholder: #c4c4c4;
+   --button-color: rgb(188, 26, 26);
+   --button-color-hover: rgb(88, 11, 11);
+   --red: #ff0000;
+   --backdrop: rgba(94, 99, 99, 0.7);
+   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@import '_global';
+@import './components/header';
+@import './components/main';
+@import './components/section';
+@import './components/footer';

@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./assets/css/styles.min.css" />
-    <title>Webvisor</title>
-  </head>
-  <body>
-    <!--HEADER-->
-    <header class="header"></header>
-    <!--MAIN-->
-    <main class="main">
-      <!--Section Hero-->
-      <section class="section">
-        <h1>Webvisor</h1>
-      </section>
-    </main>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+      <link rel="stylesheet" href="./assets/css/styles.min.css" />
+      <title>Webvisor</title>
+   </head>
+   <body class="body" data-js="body">
+      <!--HEADER-->
+      <header class="header" data-js="header">
+         <svg width="132" height="32"><use href="./assets/img/icons.svg#logo"></use></svg>
+      </header>
 
-    <!--FOOTER-->
-    <footer class="footer">&copy;2024</footer>
+      <!--MAIN-->
+      <main class="main">
+         <!--Section Hero-->
+         <section class="section section--full">
+            <div class="container">
+               <h1>Webvisor</h1>
+            </div>
+         </section>
+      </main>
 
-    <script src="./assets/js/scripts.js" type="module" defer></script>
-  </body>
+      <!--FOOTER-->
+      <footer class="footer">&copy;2024</footer>
+
+      <script src="./assets/js/scripts.js" type="module" defer></script>
+   </body>
 </html>
