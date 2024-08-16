@@ -1,7 +1,39 @@
 .footer {
    width: 100%;
-   flex: auto;
+   flex: none;
    height: 70px;
    border-top: 1px solid var(--black);
    padding: 20px;
+}
+
+.footer__content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   align-content: center;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0px 20px;
+}
+
+//Desctop
+@media (min-width: 1280px) {
+   .footer__content {
+      max-width: 1200px;
+   }
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: 1279px) {
+   .footer__content {
+      max-width: 768px;
+   }
+}
+
+//Mobil
+@media (max-width: 767px) {
+   .footer__content {
+      max-width: 375px;
+   }
 }

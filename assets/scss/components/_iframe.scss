@@ -1,0 +1,14 @@
+.iframeWrapper {
+   display: block;
+   margin: 30px auto;
+   border: 4px solid #ccc;
+   max-width: 375px;
+   height: 600px;
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+
+.iframe {
+   width: 100%;
+   height: 6000px;
+}

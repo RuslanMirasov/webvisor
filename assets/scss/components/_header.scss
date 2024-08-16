@@ -4,9 +4,40 @@
    left: 0px;
    top: 0px;
    height: 80px;
-   border-bottom: 1px solid var(--black);
    z-index: 10;
    background: var(--black);
    color: var(--white);
    padding: 20px;
+}
+
+.header__content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   align-content: center;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0px 20px;
+}
+
+//Desctop
+@media (min-width: 1280px) {
+   .header__content {
+      max-width: 1200px;
+   }
+}
+
+//Tablet
+@media (min-width: 768px) and (max-width: 1279px) {
+   .header__content {
+      max-width: 768px;
+   }
+}
+
+//Mobil
+@media (max-width: 767px) {
+   .header__content {
+      max-width: 375px;
+   }
 }

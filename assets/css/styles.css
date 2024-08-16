@@ -30,6 +30,11 @@ svg {
   fill: currentColor;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 html {
   height: 100%;
 }
@@ -53,20 +58,44 @@ html {
   left: 0px;
   top: 0px;
   height: 80px;
-  border-bottom: 1px solid var(--black);
   z-index: 10;
   background: var(--black);
   color: var(--white);
   padding: 20px;
 }
 
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+@media (min-width: 1280px) {
+  .header__content {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .header__content {
+    max-width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .header__content {
+    max-width: 375px;
+  }
+}
 .main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
   flex: 1;
-  background: #eee;
 }
 
 .section {
@@ -75,7 +104,7 @@ html {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: blue;
+  padding: 50px 0px;
 }
 .section:first-child {
   margin-top: 70px;
@@ -90,17 +119,72 @@ html {
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 1200px;
-  border: 1px solid red;
   margin: 0 auto;
   padding: 0px 20px;
   flex: 1;
 }
 
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+}
+.iframeWrapper {
+  display: block;
+  margin: 30px auto;
+  border: 4px solid #ccc;
+  max-width: 375px;
+  height: 600px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.iframe {
+  width: 100%;
+  height: 6000px;
+}
+
 .footer {
   width: 100%;
-  flex: auto;
+  flex: none;
   height: 70px;
   border-top: 1px solid var(--black);
   padding: 20px;
+}
+
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+@media (min-width: 1280px) {
+  .footer__content {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .footer__content {
+    max-width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__content {
+    max-width: 375px;
+  }
 }
